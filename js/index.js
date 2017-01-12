@@ -37,12 +37,8 @@
 								document.body.removeChild(door2);
 						},1000)
 						
-					}
-					
+					}	
 				}
-				setInterval(function(){
-							console.log(owidth);
-						},1000)
 				var navli = document.querySelectorAll(".nav li");
 				var box1section = document.querySelectorAll(".box1 section");
 				startMove(box1section[0],"left",0);	
