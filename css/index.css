@@ -15,7 +15,7 @@ body{font-size: 20px;}
 .door3_11::before{width: 100px;height: 100px;background: green;content: '';
       position: absolute;top:-60px;left: 0px; border-radius: 50%;
       }    */
-.box{width: 100%;background: bisque;}
+.box{width: 100%;background: bisque;display: none;}
 .logo{width: 100%;height: 200px;background: url(../img/logo.jpg) no-repeat center;background-size: 100%;}
 .logo::after{content: '';display: block;width: 100%;height: 0;clear: both;}
 .logo_1{width: 50%;height: 200px;float: left;}

@@ -20,7 +20,7 @@
 				var box = document.querySelector(".box");
 				var owidth = window.innerWidth;
 				var oheight =window.innerHeight;
-				box.style.display = "none";
+				box.style.display = "none";				
 				door1.style.height = oheight+"px";door1.style.width = parseInt(owidth/2)+1+"px";
 				door2.style.height = oheight+"px";door2.style.width = parseInt(owidth/2)+"px";door2.style.left = parseInt(owidth/2)+"px";
 				box.style.height = oheight+"px";
