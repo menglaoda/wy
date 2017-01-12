@@ -1,5 +1,20 @@
 *{margin: 0;padding: 0;}
 body{font-size: 20px;}
+.door1{position: absolute;top: 0;left: 0;background: black;z-index: 888;}
+.door2{position: absolute;top: 0;background: black;z-index: 888;}
+.door3{width: 60%;height: 100px;position: fixed;top: 40%;left: 20%; background:wheat;z-index: 999;}
+.door3 input{margin-top: 10px;margin-left: 2px; width: 95%;}
+.door3 p{width: 100%;height: 30px;line-height: 30px;text-align: center;}
+.door3 span{background: aquamarine;}
+/*.door3_1{width: 100%;height: 100%;position: relative;left: 40%; border: solid 1px red;}*/
+/*.door3_11{width: 100px;height: 100px;background: red;position: absolute;
+      -webkit-transform: rotate(45deg);}
+.door3_11::after{width: 100px;height: 100px;background: green;content: '';
+      position: absolute;top:-0px;left: -60px; border-radius: 50%;
+      }  
+.door3_11::before{width: 100px;height: 100px;background: green;content: '';
+      position: absolute;top:-60px;left: 0px; border-radius: 50%;
+      }    */
 .box{width: 100%;background: bisque;}
 .logo{width: 100%;height: 200px;border: solid 1px aqua;background: url(../img/logo.jpg) no-repeat center;background-size: 100%;}
 .logo::after{content: '';display: block;width: 100%;height: 0;clear: both;}
@@ -8,9 +23,9 @@ body{font-size: 20px;}
 .logo_2{width: 50%;height: 200px;float: left;;}
 .logo_2 p:nth-child(1){color: red;font-size: 30px;margin-top: 20px;}
 .logo_2 p:nth-child(2){text-indent: 40px;color: #7e818b;}
-.nav ul{width: 100%;height: 30px;line-height: 30px;display: flex;}
+.nav ul{width: 100%;height: 40px;line-height: 40px;display: flex;font-size: 30px;}
 .nav li{flex: 1;list-style: none;border: solid 1px aqua;text-align: center;}
-.box1{width: 100%;height: 100%;position: relative;}
+.box1{width: 100%;height: 100%;position: relative;display: none;}
 .section1{width: 100%;height: 300px; position: absolute;top: 0px;left: 100%;background: red;}
 .section2{width: 100%;height: 300px;position: absolute;top: 0px;left: 100%;background: blueviolet;}
 .section3{width: 100%;height: 300px;position: absolute;top: 0px;left: 100%;background: greenyellow;}
