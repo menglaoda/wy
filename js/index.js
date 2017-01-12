@@ -18,6 +18,7 @@
 				var door3inp = document.querySelectorAll(".door3 input");
 				var door3span = document.querySelector(".door3 span");
 				var box = document.querySelector(".box");
+				var box1 = document.querySelector(".box1");
 				var owidth = window.innerWidth;
 				var oheight =window.innerHeight;
 				box.style.display = "none";				
@@ -32,6 +33,7 @@
 						startMove(door1,"left",-(parseInt(owidth/2)+1));
 						startMove(door2,"left",owidth);
 						box.style.display = "block";
+						box1.style.display = "block";
 						setTimeout(function(){				
 								document.body.removeChild(door1);
 								document.body.removeChild(door2);
