@@ -30,8 +30,8 @@
 				console.log(owidth);
 				console.log(oheight);
 				box1.style.display = "block";
-//				door3span.onclick = function(){
-//					if(door3inp[0].value=="逗比" && door3inp[1].value=="520"){
+				door3span.onclick = function(){
+					if(door3inp[0].value=="逗比" && door3inp[1].value=="520"){
 						door3.style.display = "none";
 						startMove(door1,"left",-(parseInt(owidth/2)+1));
 						startMove(door2,"left",owidth);
@@ -42,8 +42,8 @@
 								document.body.removeChild(door2);
 						},1000)
 						
-//					}	
-//				}
+					}	
+				}
 				
 				startMove(box1section[0],"left",0);	
 				box1.removeAttribute("height");
