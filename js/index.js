@@ -79,28 +79,53 @@
 		        	$(this).addClass("oli");
 		        	$(this).siblings().removeClass("oli");
 		        });
+		 //感人下的H3
+		        var $h3btn = $(".ganren h3");
+		        var $biaoti = $(".biaoti");
+		        $biaoti.hide();
+		        $h3btn.on("click",function(){
+		        	var i = $h3btn.index(this);
+		        	$h3btn.eq(i).css({"color":"red","margin-left":"0px"});
+		        //	$h3btn.eq(i).css("margin-left","0px");
+		        	$h3btn.eq(i).siblings(".ganren h3").css({"color":"blue","margin-left":"20px"});
+		        	$biaoti.eq(i).show();
+		        	$biaoti.eq(i).siblings(".biaoti").hide();
+		        });
 		//感人小故事
 				var $ganrenspan1 = $(".ganrenspan1");
 				var $ganrenspan2 = $(".ganrenspan2");
 				var p0 = $ganrenspan1.eq(0).html();
 				var p1 = $ganrenspan1.eq(1).html();
 				var p2 = $ganrenspan1.eq(2).html();
+				var p3 = $ganrenspan1.eq(3).html();
+				var p4 = $ganrenspan1.eq(4).html();
+				var p5 = $ganrenspan1.eq(5).html();
+				var p6 = $ganrenspan1.eq(6).html();
+				var p7 = $ganrenspan1.eq(7).html();
+				
 			    var pp0 = p0.split("");	//字符串分割成数组
 			    var pp1 = p1.split("");	
 			    var pp2 = p2.split("");	
+			    var pp3 = p3.split("");	
+			    var pp4 = p4.split("");	var pp5 = p5.split("");	var pp6 = p6.split("");	var pp7 = p7.split("");	
 				console.log($ganrenspan1.length);
 				var ppp0 = pp0.slice(0,40);
 				var ppp1 = pp1.slice(0,40);
 				var ppp2 = pp2.slice(0,40);
+				var ppp3 = pp3.slice(0,40);
+				var ppp4 = pp4.slice(0,40);var ppp5 = pp5.slice(0,40);var ppp6 = pp6.slice(0,40);var ppp7 = pp7.slice(0,40);
 				console.log(ppp0.length);
 				var pppp0 = ppp0.join("");//把数组连接起来
 				var pppp1 = ppp1.join("");
 				var pppp2 = ppp2.join("");
+				var pppp3 = ppp3.join("");
+				var pppp4 = ppp4.join("");var pppp5 = ppp5.join("");var pppp6 = ppp6.join("");var pppp7 = ppp7.join("");
 				$ganrenspan1.eq(0).html(pppp0+"...");
 				$ganrenspan1.eq(1).html(pppp1+"...");
 				$ganrenspan1.eq(2).html(pppp2+"...");
-				$ganrenspan2.on("click",function(){
-					
+				$ganrenspan1.eq(3).html(pppp3+"...");
+				$ganrenspan1.eq(4).html(pppp4+"...");$ganrenspan1.eq(5).html(pppp5+"...");$ganrenspan1.eq(6).html(pppp6+"...");$ganrenspan1.eq(7).html(pppp7+"...");
+				$ganrenspan2.on("click",function(){					
 					var i = $ganrenspan2.index(this);
 					console.log(i);
 					if($ganrenspan2.eq(i).html()=="(展开)"){

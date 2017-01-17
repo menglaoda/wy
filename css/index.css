@@ -24,13 +24,14 @@ body{font-size: 20px;}
 .logo_2 p:nth-child(1){color: red;font-size: 30px;margin-top: 20px;}
 .logo_2 p:nth-child(2){text-indent: 40px;color: #7e818b;}
 .nav ul{width: 100%;height: 40px;line-height: 40px;display: flex;font-size: 30px;}
-.nav li{flex: 1;list-style: none;text-align: center;border-bottom: solid 1px white;}
+.nav li{height: 40px; flex: 1;list-style: none;text-align: center;border-bottom: solid 1px white;border-right: solid 1px white;}
 .oli{background:beige;}
-.box1{width:100%;height:300px; position: relative;z-index: 10;}
+.box1{width:100%;height:300px; position: relative;z-index: 10;margin-top: 1px;}
 .section1{width: 100%; position: absolute;top: 0px;left: 100%;background: bisque;z-index: 100;}
 .section2{width: 100%;height: 300px;position: absolute;top: 0px;left: 100%;background: blueviolet;z-index: 100;display: none;}
 .section3{width: 100%;height: 300px;position: absolute;top: 0px;left: 100%;background: greenyellow;z-index: 100;display: none;}
-.ganren h3{margin-top: 20px;margin-left: 20px;}
+.ganren h3{margin-top: 20px;margin-left: 20px;color: blue;}
+.ganren div{margin-left: 8px;}
 .ganren h4{margin-top: 10px;margin-left: 20px;}
 .ganren p{margin-top: 10px;width: 100%; text-indent: 40px;}
 .ganrenspan2{font-size: 10px;color: blue;}
